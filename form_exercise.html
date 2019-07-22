@@ -15,24 +15,24 @@
     <a href="#Member" style="font-size: 30px;background-color: lightgreen" title="Jump to Member">Check member who join us!</a>
     <hr>
 
-    <h2>An Unordered HTML List</h2>
+    <h1 id="Form" style="color: yellow;">Registration</h1>
+    <form action="SQL/php_test_1.php" method="post">
+        <p style="color: yellow">Username: <input type="text" name="username">  </p>
+        <p style="color: yellow">Password:  <input type="password" name="password"></p>
+        <p style="color: yellow">Birthday: <input type="date" name="birthday"> </p>
+        <p style="color: yellow">Email: <input type="email" name="email"> </p>
+        <p style="color: yellow">Gender: <br><input type="radio" name="gender" value="male" checked> Male </p>
+        <p style="color: yellow"><input type="radio" name="gender" value="female"> Female </p>
+        <p style="color: yellow"><input type="radio" name="gender" value="other"> Other </p>
+        <p style="color: yellow">Favorite Color: </p> <input type="color" name="color">
+        <p style="color: yellow"><input type="checkbox" name="agreement" value="agree"> I <strong><q>Agree</q></strong> to put my information on the website below.(Member)</p>
+        <p style="color: yellow"><input type="submit" value=" REGISTER !"></p><br>
 
-    <ul>
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-    </ul>
+    </form>
 
-    <h2>An Ordered HTML List</h2>
+    <hr>
 
-    <ol>
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-        <li>test_A</li>
-        <li style="font-family: 'Apple Chancery';color:red;background-color:yellow;">test_B</li>
-    </ol>
-
+    <h1 id="Member">Member list</h1><br>
 
 </body>
 </html>
