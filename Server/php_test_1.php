@@ -84,7 +84,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         values ('$username','$password','$birthday','$email','$gender','$color','$agreement')";
 
         if($connect->query($sql)==true){
-            echo "New Account is inserted successfully";
+            echo "<p style='color: yellow'>New Account is inserted successfully</p>";
         }else{
             echo "Error:".$sql."<br>".$connect->error;
         }
