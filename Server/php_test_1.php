@@ -86,7 +86,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if($connect->query($sql)==true){
             echo "<p style='color: yellow'>New Account is inserted successfully</p>";
         }else{
-            echo "Error:".$sql."<br>".$connect->error;
+            echo "<h1 style='color: white;'>Registration Fault: </h1>" ;
+            echo "<h2 style='color: white;'>Please try again and Below is something you miss</h2>";
+
         }
         $connect->close();
     }
@@ -102,6 +104,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <h2 style="color: yellow"> Gender: <h3 style="color: red"><?php echo $gender . $genderErr ?></h3>  </h2>
 <h2 style="color: yellow"> Color: <h3 style="color: red"><?php echo $color . $colorErr?></h3>  </h2>
 <h2 style="color: yellow"> Agreement: <h3 style="color: red"><?php echo $agreement . $agreementErr?></h3></h2><br>
+<input type="button" value="Previous" onclick="location.href='http://localhost:8888/form_exercise.php'">
+
 <hr>
 
 </body>
