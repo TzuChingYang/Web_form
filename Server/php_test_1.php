@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> Registration info </title>
+    <title> Registration infomation </title>
     <style>
 
     </style>

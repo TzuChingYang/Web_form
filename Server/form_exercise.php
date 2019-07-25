@@ -8,7 +8,9 @@
 <body style="background-image: url(background_1.jpg);">
     <h1 style="color:yellow;font-size:60px;font-family: 'Apple Chancery'">Registration form !</h1>
     <p style="font-size: 30px;color:red">Please key in your information </p>
-    <p style="font-size: 30px;color:red">press <q><ins>REGISTER!</ins></q> to register your account</p>
+    <p style="font-size: 30px;color:red">press <q><ins style="background-color: #76b852"><a href="#Form">REGISTER!</a></ins></q> to register your account</p>
+    <p style="font-size: 30px;color:red">press <q><ins style="background-color: #76b852"><a href="login_page.php">LOGIN!</a></ins></q> to login your account</p>
+
     <hr>
     <a href="#Form" style="font-size: 30px;background-color: lightgreen" title="Jump to form">Here is our form</a>
     <br><br>
