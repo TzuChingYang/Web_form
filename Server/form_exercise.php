@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -69,6 +71,7 @@
             $data=$query->fetch_row();
         ?>
             <tr>
+                <!--// Name , Email , Birthday , Gender , Color -->
                 <td style="font-size:25px ;background-color: white;text-align: center"><b> <?php echo $data[0] ?> </b></td>
                 <td style="font-size:25px;background-color: white;text-align: center"><b> <?php echo $data[3] ?></b></td>
                 <td style="font-size:25px;background-color: white;text-align: center"><b> <?php echo $data[2] ?></b></td>
