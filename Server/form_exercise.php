@@ -12,6 +12,7 @@
     <p style="font-size: 30px;color:red">Please key in your information </p>
     <p style="font-size: 30px;color:red">press <q><ins style="background-color: #76b852"><a href="#Form">REGISTER!</a></ins></q> to register your account</p>
     <p style="font-size: 30px;color:red">press <q><ins style="background-color: #76b852"><a href="login_page.php">LOGIN!</a></ins></q> to login your account</p>
+    <p style="font-size: 30px;color:red">press <q><ins style="background-color: #76b852"><a href="logout_page.php">LOGOUT!</a></ins></q> to logout your account</p>
 
     <hr>
     <a href="#Form" style="font-size: 30px;background-color: lightgreen" title="Jump to form">Here is our form</a>
@@ -69,10 +70,11 @@
         <?php
         for($num =0;$num < $query->num_rows;$num++){
             $data=$query->fetch_row();
+            $person = $data[0] ;
         ?>
             <tr>
                 <!--// Name , Email , Birthday , Gender , Color -->
-                <td style="font-size:25px ;background-color: white;text-align: center"><b> <?php echo $data[0] ?> </b></td>
+                <td style="font-size:25px ;background-color: white;text-align: center"><b><?php echo "<a href='personal_page.php?id=$person'>$data[0] </a>"?></b></td>
                 <td style="font-size:25px;background-color: white;text-align: center"><b> <?php echo $data[3] ?></b></td>
                 <td style="font-size:25px;background-color: white;text-align: center"><b> <?php echo $data[2] ?></b></td>
                 <td style="font-size:25px;background-color: white;text-align: center"><b> <?php echo $data[4] ?></b></td>
