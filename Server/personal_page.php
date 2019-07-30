@@ -52,6 +52,24 @@
                 </tr>
             </table>
             <hr>
+
+            <h1 style="color: white">Upload your file</h1>
+                <?php
+                if ($_SESSION['Username'] == $page_owner) {
+
+
+                    ?>
+                    <form action="upload.php" method="post" enctype="multipart/form-data">
+                        <h2 style="color: white">file name: <input type="file" name="file"></h2>
+                        <input type="submit" value="UPLOAD">
+                    </form>
+                    <?php
+                }else{
+                    echo '<h1 style="color: red;background-color: greenyellow">You dont have privilege <br>' ;
+                }
+                    ?>
+
+
             <?php
         }else{
             echo '<h1 style="color: #EF3B3A; background-color: #8DC26F">YOU DO NOT HAVE PRIVILEGE TO LOAD !<br></h1>' ;
