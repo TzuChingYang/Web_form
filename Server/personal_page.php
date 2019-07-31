@@ -8,7 +8,7 @@
     <title> Personal Page</title>
 </head>
 
-<body style="background-image: url(background_1.jpg);">
+<body style="background-image: url(background_1.jpg);background-attachment:fixed;background-position:left top">
     <?php
         // Check privilege
         if ($_SESSION['Username']){

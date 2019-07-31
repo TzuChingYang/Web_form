@@ -7,7 +7,7 @@
     <title>Web_form</title>
 
 </head>
-<body style="background-image: url(background_1.jpg);">
+<body style="background-image: url(background_1.jpg);background-attachment:fixed;background-position:left top">
     <h1 style="color:yellow;font-size:60px;font-family: 'Apple Chancery'">Registration form !</h1>
     <p style="font-size: 30px;color:red">Please key in your information </p>
     <p style="font-size: 30px;color:red">press <q><ins style="background-color: #76b852"><a href="#Form">REGISTER!</a></ins></q> to register your account</p>
