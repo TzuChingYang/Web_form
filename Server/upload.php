@@ -1,4 +1,10 @@
 <?php
+    session_start();
+    $person = $_SESSION['person'];
+?>
+
+
+<?php
 
     if($_FILES['file']['error']>0){
         echo 'File error'.$_FILES['file']['error'].'<br>';
@@ -32,16 +38,16 @@
                 die("Connect fault: " . $con->connect_errno);
             }
 
-            $sql = "Insert into FileData(Filename,Filetype,Filesize) values('$Filename','$Filetype','$Filesize') ";
+            $sql = "Insert into FileData(Filename,Filetype,Filesize,Belongs) values('$Filename','$Filetype','$Filesize','$person') ";
 
             if($con->query($sql)==true){
                 echo "<h1 >File's Data create success.</h1>";
-                echo "<h3 style=\"color:black\">Back to Main Page? Press Previous</h3><input type=\"button\" value=\"Previous\" onclick=\"location.href='http://localhost:8888/form_exercise.php'\">
+                echo "<h3 style=\"color:black\">Back to Person page? Press Previous</h3><input type=\"button\" value=\"Previous\" onclick=\"location.href='http://localhost:8888/personal_page.php?id=$person'\">
 ";
             }else{
                 echo "<h1>Fail ! </h1>" ;
                 echo "<h2>Please try again.</h2>";
-                echo "<h3 style=\"color:black\">Back to Main Page? Press Previous</h3><input type=\"button\" value=\"Previous\" onclick=\"location.href='http://localhost:8888/form_exercise.php'\">
+                echo "<h3 style=\"color:black\">Back to Person page? Press Previous</h3><input type=\"button\" value=\"Previous\" onclick=\"location.href='http://localhost:8888/personal_page.php?id=$person'\">
 ";
             }
             $connect->close();
